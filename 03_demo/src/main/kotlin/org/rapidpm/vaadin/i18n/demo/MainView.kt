@@ -42,7 +42,7 @@ class MainView : AppLayout() {
   private val availableTabs: Array<Tab>
     get() {
       val tabs = ArrayList<Tab>()
-      tabs.add(createTab("Dashboard", DashboardView::class.java))
+      tabs.add(createTab(getTranslation("mainview.dashboard"), DashboardView::class.java))
       return tabs.toTypedArray()
     }
 

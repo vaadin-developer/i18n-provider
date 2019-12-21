@@ -29,7 +29,7 @@ import java.util.*
 
 class ServiceHealtCard : Composite<Div>(), HasLogger {
   private val grid = Grid<HealthGridItem>()
-  private val label = H3("Service health")
+  private val label = H3(getTranslation("service-health-card.title"))
 
   init {
     content.add(WrapperCard("wrapper", arrayOf(label, grid), CLASSNME))
@@ -39,7 +39,7 @@ class ServiceHealtCard : Composite<Div>(), HasLogger {
 
   private fun configGrid() {
     grid.addColumn({ it.city })
-        .setHeader("City")
+        .setHeader(getTranslation("service-health-card.city"))
     grid.addColumn(ComponentRenderer<Span, HealthGridItem> { item ->
       val span = Span(item.status)
       span.element
@@ -49,9 +49,9 @@ class ServiceHealtCard : Composite<Div>(), HasLogger {
     })
         .setFlexGrow(0)
         .setWidth("100px")
-        .setHeader("Status")
+        .setHeader(getTranslation("service-health-card.status"))
     grid.addColumn({ it.itemDate })
-        .setHeader("Date")
+        .setHeader(getTranslation("service-health-card.date"))
         .setWidth("140px")
     grid.addThemeVariants(GridVariant.LUMO_NO_BORDER)
   }

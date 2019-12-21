@@ -32,7 +32,7 @@ class ButtonClickCard : Composite<Div>(), HasLogger {
 
   init {
     btnClickMe.setId(BTN_CLICK_ME)
-    btnClickMe.text = "Click Me"
+    btnClickMe.text = getTranslation("button-click-card.click-me")
     btnClickMe.addClickListener { event -> lbClickCount.text = (++clickcount).toString() }
 
     lbClickCount.setId(LB_CLICK_COUNT)
