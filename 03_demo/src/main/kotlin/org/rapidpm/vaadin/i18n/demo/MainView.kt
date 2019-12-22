@@ -1,5 +1,5 @@
 /**
- * Copyright © 2017 Sven Ruppert (sven.ruppert@gmail.com)
+ * Copyright © 2018 Sven Ruppert (sven.ruppert@gmail.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ class MainView : AppLayout() {
   private val availableTabs: Array<Tab>
     get() {
       val tabs = ArrayList<Tab>()
-      tabs.add(createTab("Dashboard", DashboardView::class.java))
+      tabs.add(createTab(getTranslation("mainview.dashboard"), DashboardView::class.java))
       return tabs.toTypedArray()
     }
 

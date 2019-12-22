@@ -1,5 +1,5 @@
 /**
- * Copyright © 2017 Sven Ruppert (sven.ruppert@gmail.com)
+ * Copyright © 2018 Sven Ruppert (sven.ruppert@gmail.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ class ButtonClickCard : Composite<Div>(), HasLogger {
 
   init {
     btnClickMe.setId(BTN_CLICK_ME)
-    btnClickMe.text = "Click Me"
+    btnClickMe.text = getTranslation("button-click-card.click-me")
     btnClickMe.addClickListener { event -> lbClickCount.text = (++clickcount).toString() }
 
     lbClickCount.setId(LB_CLICK_COUNT)
