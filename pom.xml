@@ -25,12 +25,12 @@
   <parent>
     <groupId>org.rapidpm</groupId>
     <artifactId>rapidpm-vaadin-dependencies-v14</artifactId>
-    <version>04.05.03-RPM</version>
+    <version>04.06.00-RPM</version>
   </parent>
 
   <groupId>org.rapidpm.vaadin</groupId>
   <artifactId>i18n-provider-for-flow-parent</artifactId>
-  <version>00.08.01-RPM-SNAPSHOT</version>
+  <version>00.08.01-RPM</version>
 
   <packaging>pom</packaging>
 
@@ -85,7 +85,6 @@
   <properties>
     <!--technical-->
     <jdk.version>1.8</jdk.version>
-
   </properties>
 
 
@@ -94,12 +93,12 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>i18n-provider-for-flow</artifactId>
-        <version>00.08.01-RPM-SNAPSHOT</version>
+        <version>00.08.01-RPM</version>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>nano-vaadin-undertow</artifactId>
-        <version>01.00.03-RPM</version>
+        <version>01.00.04-RPM</version>
       </dependency>
       <dependency>
         <groupId>com.github.appreciated</groupId>
@@ -108,5 +107,16 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+    </dependency>
+  </dependencies>
 
 </project>
