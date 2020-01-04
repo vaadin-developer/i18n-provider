@@ -13,3 +13,5 @@ The supported locals fixed right now.
   private static final ResourceBundle RESOURCE_BUNDLE_EN_NZ = getBundle(RESOURCE_BUNDLE_NAME, NEW_ZEALAND);
 ```
  
+## Heroku deployment
+This project is prepared for a Heroku deployment
